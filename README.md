@@ -23,6 +23,7 @@ A pseudo-Linq like extensions library for JavaScript
 <hr/>
 <h5>Usage</h5>
 <p>Suppose you have an array named 'arr'. You could perform operations on this array simply like this:</p>
+
 ```javascript
   var arr = [1,2,3,4,5,6,7,8,9,0];
   var lessThanFive = arr.where(x => x < 5);
@@ -40,6 +41,7 @@ A pseudo-Linq like extensions library for JavaScript
 
 <p>The above String functions can be used in two ways.</p>
 <p>Functions like String.join are directly added to the String class and can be used like this:</p>
+
 ```javascript
   var arr = [1,2,3,4,5,6,7,8,9,0];
   var joinedString = String.join(', ', arr); 
@@ -49,6 +51,7 @@ A pseudo-Linq like extensions library for JavaScript
 ```
 
 <p>Other functions are prototypes and can be used like any other prototype. For Example:</p>
+
 ```javascript
   var arr = [1,2,3,4,5,6,7,8,9,0];
   var joinedString = String.join(', ', arr); 
