@@ -1,0 +1,24 @@
+{
+  "name": "j-linq",
+  "version": "1.0.0",
+  "description": "A pseudo-Linq like extensions library for JavaScript",
+  "main": "j-linq.js",
+  "scripts": {
+    "test": "typeof(Array.prototype.where) === 'function'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniAsh551/JLinq.git"
+  },
+  "keywords": [
+    "linq",
+    "extension",
+    "prototype"
+  ],
+  "author": "Dani (d4n1.551)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaniAsh551/JLinq/issues"
+  },
+  "homepage": "https://github.com/DaniAsh551/JLinq#readme"
+}
