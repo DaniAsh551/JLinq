@@ -86,6 +86,32 @@ if (!Array.prototype.first) {
     };
 }
 
+//Add Linq like last to javascript arrays
+if (!Array.prototype.last) {
+    /**
+    * @name first
+    * @typedef Array
+    * @description Returns the last element which match a given predicate. eg: let val = arr.last(x => x > 1);
+    * @param {Function} predicate The predicate function to compare elements against.
+    */
+    Array.prototype.last = function (predicate) {
+		let lastItem =  null;
+        if (predicate) {
+            let i = 0;
+            for (i = 0; i < this.length; i++) {
+                if (predicate(this[i])) {
+                    lastItem =  this[i];
+                }
+            }
+        } else {
+            if (this[0])
+                return this[this.length - 1];
+        }
+
+        return lastItem;
+    };
+}
+
 //Add Linq like where to javascript arrays
 if (!Array.prototype.where) {
     /**
